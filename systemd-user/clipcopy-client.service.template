@@ -1,0 +1,16 @@
+[Unit]
+Description=ClipCopy Text Clipboard Sync Client
+After=network-online.target graphical-session.target
+Wants=network-online.target
+PartOf=graphical-session.target
+
+[Service]
+Type=simple
+WorkingDirectory=@PROJECT_DIR@
+ExecStart=@PYTHON_BIN@ @PROJECT_DIR@/clipboard_watch.py --config @PROJECT_DIR@/client_config.json sync
+Restart=always
+RestartSec=2
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=default.target

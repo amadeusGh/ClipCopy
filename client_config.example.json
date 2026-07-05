@@ -1,0 +1,10 @@
+{
+  "server_host": "127.0.0.1",
+  "server_port": 8765,
+  "state_dir": ".clipcopy_state",
+  "auth_token": "CHANGE_ME_TO_MATCH_SERVER",
+  "tls": true,
+  "ca_cert": ".clipcopy_state/tls/clipcopy.crt",
+  "insecure_tls": false,
+  "interval": 0.4
+}

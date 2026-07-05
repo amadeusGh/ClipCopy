@@ -1,0 +1,15 @@
+[Unit]
+Description=ClipCopy Text Clipboard Sync Server
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+WorkingDirectory=@PROJECT_DIR@
+ExecStart=@PYTHON_BIN@ @PROJECT_DIR@/clipboard_server.py --config @PROJECT_DIR@/server_config.json
+Restart=always
+RestartSec=2
+Environment=PYTHONUNBUFFERED=1
+
+[Install]
+WantedBy=default.target

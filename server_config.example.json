@@ -1,0 +1,13 @@
+{
+  "host": "0.0.0.0",
+  "port": 8765,
+  "storage_dir": "server_storage",
+  "auth_token": "CHANGE_ME_TO_A_LONG_RANDOM_TOKEN",
+  "tls_cert": ".clipcopy_state/tls/clipcopy.crt",
+  "tls_key": ".clipcopy_state/tls/clipcopy.key",
+  "tls_common_name": "localhost",
+  "tls_subject_alt_names": [
+    "DNS:localhost",
+    "IP:127.0.0.1"
+  ]
+}
